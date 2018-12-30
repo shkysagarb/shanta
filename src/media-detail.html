@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Bootstrap 4 Layout</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>  
+        <!--  header div starts-->
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent ">
+                <a class="navbar-brand" href="#">
+                 <img src="images/shanta_logo.png" alt="" height="50px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MEDIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">STILL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BEHIND THE SCENE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                  </div>
+                </nav>
+        </header>
+        <!--  header div ends-->
+        
+        <!--media-detail page section starts   -->
+        <section class="media-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="media-box">
+                        <iframe width="1349" height="600" src="https://www.youtube.com/embed/BTHJM1YT41s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> 
+                    <div class="media-text">
+                            <div>
+                                <h6 class="tag-head">DIRECTOR, CAMERA, EDIT</h6>
+                                <h2 class="main-head">And then they flow And then they  And then they flow</h2>
+                                <p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. </p>
+                                <p class="para">Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!-- media-detail page section ends-->
+        
+         <!--  footer div starts-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <a href=""><img src="images/shanta_logo.png" alt=""  /></a>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>About Me</li>
+                            <li>Case Study</li>
+                            <li>Contact Me</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>Stills</li>
+                            <li>Videos</li>
+                            <li>Behind the scenes</li>
+                        </ul>
+                    </div>
+                    <div class="col-4 social-icons-copyright">
+                        <ul class="social-icons">
+                            <li><a><i class="icofont-facebook"></i></a></li>
+                            <li><a><i class="icofont-instagram"></i></a></li>
+                            <li><a><i class="icofont-linkedin"></i></a></li>
+                            <li><a><i class="icofont-brand-youtube"></i></a></li>
+                            
+                        </ul>
+                        <a class="copyright">© copyright 2018 Shanta Nepali</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--  footer div ends-->
+       
+       <script>
+            $(document).ready(function() {
+                  $('.test-popup-link').magnificPopup({
+                  type: 'image'
+                  // other options
+                });
+                $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
+                $('.images-slider-div').owlCarousel({
+                    loop:true,
+                    margin:30,
+                    responsiveClass:true,
+                    responsive:{
+                        0:{
+                            items:1,
+                            nav:true
+                        },
+                        600:{
+                            items:2,
+                            nav:false
+                        },
+                        1000:{
+                            items:3,
+                            nav:true,
+                            loop:false
+                        }
+                    }
+                });
+                $('.images-slider-diva').owlCarousel({
+                    loop:true,
+                    margin:30,
+                    responsiveClass:true,
+                    responsive:{
+                        0:{
+                            items:1,
+                            nav:true
+                        },
+                        600:{
+                            items:2,
+                            nav:false
+                        },
+                        1000:{
+                            items:3,
+                            nav:true,
+                            loop:false
+                        }
+                    }
+                });
+                $('.logo-slider-div').owlCarousel({
+                    loop:true,
+                    margin:30,
+                    responsiveClass:true,
+                    responsive:{
+                        0:{
+                            items:1,
+                            nav:true
+                        },
+                        600:{
+                            items:2,
+                            nav:false
+                        },
+                        1000:{
+                            items:6,
+                            nav:true,
+                            loop:false
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
+        
