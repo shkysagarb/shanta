@@ -11,7 +11,7 @@
     <body>  
         <!--        header div starts-->
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent ">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
                 <a class="navbar-brand" href="#">
                  <img src="images/shanta_logo.png" alt="" height="50px" />
                 </a>
@@ -458,10 +458,22 @@
         
         <script>
             $(document).ready(function() {
+                 var mainbottom = $('.navbar').offset().top;
+                    // on scroll,
+                    $(window).on('scroll', function () {
+                        // we round here to reduce a little workload
+                        stop = Math.round($(window).scrollTop());
+                        if (stop > mainbottom) {
+                            $('.navbar').addClass('sticky-nav');
+                        } else {
+                            $('.navbar').removeClass('sticky-nav');
+                        }
+                    });
+                
                   $('.test-popup-link').magnificPopup({
-                  type: 'image'
-                  // other options
-                });
+                      type: 'image'
+                      // other options
+                  });
                             $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
                     disableOn: 700,
                     type: 'iframe',

@@ -99,6 +99,17 @@
        
        <script>
             $(document).ready(function() {
+                var mainbottom = $('header').offset().top;
+                    // on scroll,
+                    $(window).on('scroll', function () {
+                        // we round here to reduce a little workload
+                        stop = Math.round($(window).scrollTop());
+                        if (stop > mainbottom) {
+                            $('header').addClass('sticky-nav');
+                        } else {
+                            $('header').removeClass('sticky-nav');
+                        }
+                    });
                   $('.test-popup-link').magnificPopup({
                   type: 'image'
                   // other options
