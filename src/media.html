@@ -11,8 +11,8 @@
     <body>  
         <!--  header div starts-->
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent ">
-                <a class="navbar-brand" href="#">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="index.html">
                  <img src="images/shanta_logo.png" alt="" height="50px" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,19 +21,19 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="about.html">ABOUT <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">MEDIA</a>
+                            <a class="nav-link" href="media.html">MEDIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">STILL</a>
+                            <a class="nav-link" href="still-image.html">STILL</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">BEHIND THE SCENE</a>
+                            <a class="nav-link" href="behind.html">BEHIND THE SCENE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="contact.html">CONTACT</a>
                         </li>
                     </ul>
                   </div>
@@ -43,6 +43,13 @@
     
         <!-- media pages  -->
         <section class="media-page">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="section-heading">Media</h1>
+                    </div>
+                </div>      
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -136,7 +143,6 @@
             </div>
         </footer>
         <!--  footer div ends-->
-        
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
@@ -145,30 +151,31 @@
         
         <script>
             $(document).ready(function() {
-                var mainbottom = $('header').offset().top;
+                 var mainbottom = $('.navbar').offset().top;
                     // on scroll,
                     $(window).on('scroll', function () {
                         // we round here to reduce a little workload
                         stop = Math.round($(window).scrollTop());
                         if (stop > mainbottom) {
-                            $('header').addClass('sticky-nav');
+                            $('.navbar').addClass('sticky-nav');
                         } else {
-                            $('header').removeClass('sticky-nav');
+                            $('.navbar').removeClass('sticky-nav');
                         }
                     });
+                
                   $('.test-popup-link').magnificPopup({
-                  type: 'image'
-                  // other options
-                });
-                $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
+                      type: 'image'
+                      // other options
+                  });
+                            $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+                    disableOn: 700,
+                    type: 'iframe',
+                    mainClass: 'mfp-fade',
+                    removalDelay: 160,
+                    preloader: false,
 
-		fixedContentPos: false
-	});
+                    fixedContentPos: false
+                });
                 $('.images-slider-div').owlCarousel({
                     loop:true,
                     margin:30,
@@ -231,6 +238,7 @@
                 });
             });
         </script>
+    
     </body>
 </html>
         

@@ -10,7 +10,7 @@
 
     <body>  
         <!--  header div starts-->
-        <header>
+         <header>
             <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
                 <a class="navbar-brand" href="index.html">
                  <img src="images/shanta_logo.png" alt="" height="50px" />
@@ -41,27 +41,59 @@
         </header>
         <!--  header div ends-->
         
-        <!--media-detail page section starts   -->
-        <section class="media-detail">
+         <!--  still-image div starts-->
+        <section class="section-still">
             <div class="container">
                 <div class="row">
-                    <div class="media-video">
-                        <iframe width="100%" height="600" src="https://www.youtube.com/embed/BTHJM1YT41s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div> 
-                    <div class="media-text">
-                        <div>
-                            <h6 class="tag-head">DIRECTOR, CAMERA, EDIT</h6>
-                            <h2 class="main-head">And then they flow And then they  And then they flow</h2>
-                            <p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. </p>
-                            <p class="para">Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
-</div>
+                    <div class="col-12">
+                        <h2 class="section-heading">Still Images</h2>
+                    </div>
+                 </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                          <div class="still-block">
+                              <div class="still-outer-block">
+                                <h3 class="still-block-heading">People</h3>
+                                <div class="still-block-hidden">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+                                    <a href="people.html">DISCOVER MORE  <i class="icofont-play-alt-2"></i></a>
+                                </div>
+                              </div>
+                              <img src="images/sample.jpg" alt=""/> 
+                         </div>
+                    </div>
+                    <div class="col-lg-4">
+                          <div class="still-block">
+                              <div class="still-outer-block">
+                                <h3 class="still-block-heading">People</h3>
+                                <div class="still-block-hidden">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+                                    <a href="">DISCOVER MORE  <i class="icofont-play-alt-2"></i></a>
+                                </div>
+                              </div>
+                              <img src="images/still-img2.jpg" alt=""/>
+                            </div>
+                    </div>
+                    <div class="col-lg-4">
+                         <div class="still-block">
+                              <div class="still-outer-block">
+                                <h3 class="still-block-heading">People</h3>
+                                <div class="still-block-hidden">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+                                    <a href="">DISCOVER MORE  <i class="icofont-play-alt-2"></i></a>
+                                </div>
+                              </div>
+                              <img src="images/still-img3.jpg" alt=""/>
+                          </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- media-detail page section ends-->
+        <!--   still-images div ends-->
         
-        <!--  footer div starts-->
+         <!--  footer div starts-->
         <footer>
             <div class="container">
                 <div class="row">
@@ -103,7 +135,7 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         
-        <script>
+       <script>
             $(document).ready(function() {
                  var mainbottom = $('.navbar').offset().top;
                     // on scroll,
