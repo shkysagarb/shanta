@@ -40,101 +40,103 @@
         </section>
         <!-- team inner-page ends-->
         <script src="js/jquery.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        
-        <script>
-            $(document).ready(function() {
-                 var mainbottom = $('.navbar').offset().top;
-                    // on scroll,
-                    $(window).on('scroll', function () {
-                        // we round here to reduce a little workload
-                        stop = Math.round($(window).scrollTop());
-                        if (stop > mainbottom) {
-                            $('.navbar').addClass('sticky-nav');
-                        } else {
-                            $('.navbar').removeClass('sticky-nav');
-                        }
-                    });
-                
-                  $('.test-popup-link').magnificPopup({
-                      type: 'image'
-                      // other options
-                  });
-                    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-                    disableOn: 700,
-                    type: 'iframe',
-                    mainClass: 'mfp-fade',
-                    removalDelay: 160,
-                    preloader: false,                   fixedContentPos: false
-                });
-                $('.simple-ajax-popup').magnificPopup({
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var mainbottom = $('.navbar').offset().top;
+        // on scroll,
+        $(window).on('scroll', function () {
+            // we round here to reduce a little workload
+            stop = Math.round($(window).scrollTop());
+            if (stop > mainbottom) {
+                $('.navbar').addClass('sticky-nav');
+            } else {
+                $('.navbar').removeClass('sticky-nav');
+            }
+        });
+
+        $('.test-popup-link').magnificPopup({
+            type: 'image'
+            // other options
+        });
+        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+        $('.simple-ajax-popup').magnificPopup({
                     type: 'ajax'
                 });
-                $('.images-slider-div').owlCarousel({
-                    loop:true,
-                    margin:30,
-                    responsiveClass:true,
-                    responsive:{
-                        0:{
-                            items:1,
-                            nav:true
-                        },
-                        600:{
-                            items:2,
-                            nav:false
-                        },
-                        1000:{
-                            items:3,
-                            nav:true,
-                            loop:false
-                        }
-                    }
-                });
-                $('.images-slider-diva').owlCarousel({
-                    loop:true,
-                    margin:30,
-                    responsiveClass:true,
-                    responsive:{
-                        0:{
-                            items:1,
-                            nav:true
-                        },
-                        600:{
-                            items:2,
-                            nav:false
-                        },
-                        1000:{
-                            items:3,
-                            nav:true,
-                            loop:false
-                        }
-                    }
-                });
-                $('.logo-slider-div').owlCarousel({
-                    loop:true,
-                    margin:30,
-                    responsiveClass:true,
-                    responsive:{
-                        0:{
-                            items:1,
-                            nav:true
-                        },
-                        600:{
-                            items:2,
-                            nav:false
-                        },
-                        1000:{
-                            items:6,
-                            nav:true,
-                            loop:false
-                        }
-                    }
-                });
-            });
-        </script>
-    
+        $('.images-slider-div').owlCarousel({
+            loop: true,
+            margin: 30,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        });
+        $('.images-slider-diva').owlCarousel({
+            loop: true,
+            margin: 30,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        });
+        $('.logo-slider-div').owlCarousel({
+            loop: true,
+            margin: 30,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 6,
+                    nav: true,
+                    loop: false
+                }
+            }
+        });
+    });
+</script>
+
      </body>  
 </html>

@@ -108,137 +108,137 @@
         </section>
         <!--  media pages ends-->
         
-        <!--  footer div starts-->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <a href=""><img src="images/shanta_logo.png" alt=""  /></a>
-                    </div>
-                    <div class="col-3">
-                        <ul>
-                            <li>About Me</li>
-                            <li>Case Study</li>
-                            <li>Contact Me</li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <ul>
-                            <li>Stills</li>
-                            <li>Videos</li>
-                            <li>Behind the scenes</li>
-                        </ul>
-                    </div>
-                    <div class="col-4 social-icons-copyright">
-                        <ul class="social-icons">
-                            <li><a><i class="icofont-facebook"></i></a></li>
-                            <li><a><i class="icofont-instagram"></i></a></li>
-                            <li><a><i class="icofont-linkedin"></i></a></li>
-                            <li><a><i class="icofont-brand-youtube"></i></a></li>
-                            
-                        </ul>
-                        <a class="copyright">© copyright 2018 Shanta Nepali</a>
-                    </div>
-                </div>
+     <!--  footer div starts-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-sm-12">
+                <a href="index.html"><img src="images/shanta_logo.png" alt="" class="img-fluid"/></a>
             </div>
-        </footer>
-        <!--  footer div ends-->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        
-        <script>
-            $(document).ready(function() {
-                 var mainbottom = $('.navbar').offset().top;
-                    // on scroll,
-                    $(window).on('scroll', function () {
-                        // we round here to reduce a little workload
-                        stop = Math.round($(window).scrollTop());
-                        if (stop > mainbottom) {
-                            $('.navbar').addClass('sticky-nav');
-                        } else {
-                            $('.navbar').removeClass('sticky-nav');
-                        }
-                    });
-                
-                  $('.test-popup-link').magnificPopup({
-                      type: 'image'
-                      // other options
-                  });
-                            $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-                    disableOn: 700,
-                    type: 'iframe',
-                    mainClass: 'mfp-fade',
-                    removalDelay: 160,
-                    preloader: false,
+            <div class="col-lg-3 col-sm-12">
+                <ul>
+                    <li>About Me</li>
+                    <li>Case Study</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <ul>
+                    <li>Stills</li>
+                    <li>Videos</li>
+                    <li>Behind the scenes</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-sm-12 social-icons-copyright">
+                <ul class="social-icons">
+                    <li><a><i class="icofont-facebook"></i></a></li>
+                    <li><a><i class="icofont-instagram"></i></a></li>
+                    <li><a><i class="icofont-linkedin"></i></a></li>
+                    <li><a><i class="icofont-brand-youtube"></i></a></li>
+                </ul>
+                <a class="copyright">© copyright 2018 Shanta Nepali</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--  footer div ends-->
 
-                    fixedContentPos: false
-                });
-                $('.images-slider-div').owlCarousel({
-                    loop:true,
-                    margin:30,
-                    responsiveClass:true,
-                    responsive:{
-                        0:{
-                            items:1,
-                            nav:true
-                        },
-                        600:{
-                            items:2,
-                            nav:false
-                        },
-                        1000:{
-                            items:3,
-                            nav:true,
-                            loop:false
-                        }
-                    }
-                });
-                $('.images-slider-diva').owlCarousel({
-                    loop:true,
-                    margin:30,
-                    responsiveClass:true,
-                    responsive:{
-                        0:{
-                            items:1,
-                            nav:true
-                        },
-                        600:{
-                            items:2,
-                            nav:false
-                        },
-                        1000:{
-                            items:3,
-                            nav:true,
-                            loop:false
-                        }
-                    }
-                });
-                $('.logo-slider-div').owlCarousel({
-                    loop:true,
-                    margin:30,
-                    responsiveClass:true,
-                    responsive:{
-                        0:{
-                            items:1,
-                            nav:true
-                        },
-                        600:{
-                            items:2,
-                            nav:false
-                        },
-                        1000:{
-                            items:6,
-                            nav:true,
-                            loop:false
-                        }
-                    }
-                });
-            });
-        </script>
-    
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var mainbottom = $('.navbar').offset().top;
+        // on scroll,
+        $(window).on('scroll', function () {
+            // we round here to reduce a little workload
+            stop = Math.round($(window).scrollTop());
+            if (stop > mainbottom) {
+                $('.navbar').addClass('sticky-nav');
+            } else {
+                $('.navbar').removeClass('sticky-nav');
+            }
+        });
+
+        $('.test-popup-link').magnificPopup({
+            type: 'image'
+            // other options
+        });
+        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+        $('.images-slider-div').owlCarousel({
+            loop: true,
+            margin: 30,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        });
+        $('.images-slider-diva').owlCarousel({
+            loop: true,
+            margin: 30,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        });
+        $('.logo-slider-div').owlCarousel({
+            loop: true,
+            margin: 30,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 6,
+                    nav: true,
+                    loop: false
+                }
+            }
+        });
+    });
+</script>
+
     </body>
 </html>
         

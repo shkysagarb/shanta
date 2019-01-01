@@ -6319,8 +6319,16 @@ a.text-dark:hover, a.text-dark:focus {
 .bg-transparent {
   background: transparent; }
 
+@media (max-width: 767.98px) {
+  ul {
+    padding-left: 0; } }
+
 ul li {
   list-style-type: none; }
+
+@media (max-width: 767.98px) {
+  .media-text {
+    padding-bottom: 20px; } }
 
 .tag-head {
   color: rgba(0, 0, 0, 0.8);
@@ -6346,6 +6354,10 @@ ul li {
 .i-part {
   font-size: 20px;
   margin-left: 15px; }
+
+@media (max-width: 767.98px) {
+  .still-image-whole {
+    padding-bottom: 20px; } }
 
 .still-block {
   position: relative;
@@ -6456,6 +6468,9 @@ ul li {
   letter-spacing: 3px;
   font-family: "Poppins", sans-serif;
   font-weight: 300; }
+  @media (max-width: 767.98px) {
+    .more-video-link {
+      padding: 20px 50px; } }
 
 a {
   font-family: "Poppins", sans-serif;
@@ -6554,27 +6569,28 @@ a {
   margin-bottom: 80px; }
   .section-owl .images-slider-diva, .section-owl .images-slider-div {
     margin-bottom: 50px; }
+    @media (max-width: 767.98px) {
+      .section-owl .images-slider-diva, .section-owl .images-slider-div {
+        padding: 20px; } }
     .section-owl .images-slider-diva .owl-nav, .section-owl .images-slider-div .owl-nav {
       display: none; }
 
 .section-people-views #quote-carousel {
   padding: 0 10px 30px 10px;
   margin-top: 30px;
-  /* Control buttons  */
-  /* Previous button  */
-  /* Next button  */
-  /* Changes the position of the indicators */
-  /* Changes the color of the indicators */ }
-  .section-people-views #quote-carousel .carousel-control {
-    background: none;
-    color: #CACACA;
-    font-size: 2.3em;
-    text-shadow: none;
-    margin-top: 30px; }
-    .section-people-views #quote-carousel .carousel-control .left {
-      left: -60px; }
-    .section-people-views #quote-carousel .carousel-control .right {
-      right: -60px; }
+  position: relative; }
+  .section-people-views #quote-carousel .slide-arrow {
+    position: absolute;
+    top: -15px; }
+    .section-people-views #quote-carousel .slide-arrow .carousel-control {
+      background: none;
+      color: #CACACA;
+      font-size: 2.3em;
+      text-shadow: none; }
+    .section-people-views #quote-carousel .slide-arrow .left {
+      left: 5px; }
+    .section-people-views #quote-carousel .slide-arrow .right {
+      right: 10px; }
   .section-people-views #quote-carousel .carousel-indicators {
     position: relative;
     height: 128px; }
@@ -6589,6 +6605,10 @@ a {
       overflow: hidden;
       transition: all 0.4s;
       text-indent: 0%; }
+      @media (max-width: 767.98px) {
+        .section-people-views #quote-carousel .carousel-indicators li {
+          width: 30px;
+          height: 30px; } }
       .section-people-views #quote-carousel .carousel-indicators li img {
         width: 100%;
         height: 100%;
@@ -6603,6 +6623,9 @@ a {
       overflow: hidden; }
   .section-people-views #quote-carousel .carousel-inner {
     min-height: 150px; }
+    @media (max-width: 767.98px) {
+      .section-people-views #quote-carousel .carousel-inner {
+        padding-bottom: 20px; } }
   .section-people-views #quote-carousel .carousel-item blockquote {
     border-left: none;
     margin: 0; }
@@ -6626,13 +6649,15 @@ a {
 
 .section-logo-slider {
   padding-bottom: 40px; }
+  @media (max-width: 767.98px) {
+    .section-logo-slider {
+      padding-bottom: 0; } }
   .section-logo-slider .owl-nav {
     display: none; }
   .section-logo-slider img {
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-    height: 80px; }
+    filter: grayscale(100%); }
     .section-logo-slider img:hover {
       -webkit-filter: grayscale(0%);
       /* Safari 6.0 - 9.0 */
@@ -6641,16 +6666,26 @@ a {
 footer {
   margin-bottom: 50px; }
   footer img {
-    height: 50px; }
-    @media (min-width: 768px) {
+    height: 100px; }
+    @media (max-width: 767.98px) {
       footer img {
-        height: 100px; } }
+        height: 50px;
+        padding-left: 20px;
+        padding-bottom: 10px; } }
+  @media (max-width: 767.98px) {
+    footer ul {
+      padding-left: 0;
+      margin-bottom: 0; } }
   footer ul li {
     font-size: 16px;
     font-family: "Poppins", sans-serif; }
   footer .social-icons-copyright .social-icons {
     display: flex;
     justify-content: flex-end; }
+    @media (max-width: 767.98px) {
+      footer .social-icons-copyright .social-icons {
+        justify-content: flex-start;
+        padding-top: 20px; } }
     footer .social-icons-copyright .social-icons li {
       padding-right: 10px;
       font-size: 14px;
@@ -6658,9 +6693,15 @@ footer {
       @media (min-width: 768px) {
         footer .social-icons-copyright .social-icons li {
           font-size: 24px; } }
+      @media (max-width: 767.98px) {
+        footer .social-icons-copyright .social-icons li {
+          padding-left: 0; } }
   footer .social-icons-copyright .copyright {
     display: flex;
     justify-content: flex-end; }
+    @media (max-width: 767.98px) {
+      footer .social-icons-copyright .copyright {
+        justify-content: flex-start; } }
 
 /**
  * Simple fade transition,
@@ -6701,6 +6742,9 @@ footer {
     .media-page .pagination li .page-link {
       color: #000;
       padding: 1rem 2rem; }
+      @media (max-width: 767.98px) {
+        .media-page .pagination li .page-link {
+          padding: 1rem 1rem; } }
     .media-page .pagination .active .page-link {
       background-color: #e5e5e5;
       border-color: #cccccc; }
