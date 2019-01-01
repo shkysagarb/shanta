@@ -6728,26 +6728,19 @@ footer {
 
 .gallery {
   margin-top: 80px; }
-  .gallery img {
+  .gallery .photo {
     width: 100%;
-    height: 300px;
-    object-fit: cover; }
+    height: 300px; }
+    .gallery .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
   .gallery .pics_in_a_row {
     display: flex; }
   .gallery .pics_in_a_row {
     margin-bottom: 20px; }
   .gallery .pics_in_a_row > div:not(:last-child) {
     margin-right: 2%; }
-  .gallery .img1 {
-    flex: 1.3344; }
-  .gallery .img2 {
-    flex: 1.3345; }
-  .gallery .img3 {
-    flex: 0.7505; }
-  .gallery .img4 {
-    flex: 1.5023; }
-  .gallery .img5 {
-    flex: 0.75; }
 
 .contact-page {
   margin-top: 20px;
@@ -6761,4 +6754,45 @@ footer {
   margin-bottom: 80px; }
 
 .our-team {
-  margin-top: 80px; }
+  margin-top: 80px;
+  margin-bottom: 50px; }
+
+.team-inner {
+  position: relative; }
+  .team-inner .ajax-text-and-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background: #FFF;
+    display: flex; }
+    @media (min-width: 768px) {
+      .team-inner .ajax-text-and-image .ajax-image {
+        justify-content: flex-start; }
+      .team-inner .ajax-text-and-image .ajax-text {
+        justify-content: flex-end; } }
+    .team-inner .ajax-text-and-image .ajax-text .scroll-text {
+      position: relative;
+      overflow-y: scroll;
+      height: 350px;
+      margin: 20px;
+      margin-left: 60px; }
+    .team-inner .ajax-text-and-image .ajax-image {
+      padding-left: 0; }
+      .team-inner .ajax-text-and-image .ajax-image img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover; }
+    .team-inner .ajax-text-and-image .position {
+      font-size: 18px; }
+    .team-inner .ajax-text-and-image .social-icons {
+      margin-left: 0;
+      padding-left: 0; }
+      .team-inner .ajax-text-and-image .social-icons li {
+        padding-right: 10px;
+        font-size: 12px;
+        display: inline-block; }
+        @media (min-width: 768px) {
+          .team-inner .ajax-text-and-image .social-icons li {
+            font-size: 24px; } }
