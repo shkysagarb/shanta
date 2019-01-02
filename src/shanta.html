@@ -39,7 +39,7 @@
             </div>
         </section>
         <!-- team inner-page ends-->
-        <script src="js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -58,7 +58,30 @@
                 $('.navbar').removeClass('sticky-nav');
             }
         });
+        $('.zoom-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+                verticalFit: true,
+//                titleSrc: function(item) {
+//                    return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+//                }
+            },
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // don't foget to change the duration also in CSS
+                opener: function(element) {
+                    return element.find('img');
+                }
+            }
 
+        });
         $('.test-popup-link').magnificPopup({
             type: 'image'
             // other options
@@ -74,7 +97,7 @@
         });
         $('.simple-ajax-popup').magnificPopup({
                     type: 'ajax'
-                });
+         });
         $('.images-slider-div').owlCarousel({
             loop: true,
             margin: 30,
@@ -138,5 +161,6 @@
     });
 </script>
 
-     </body>  
+    </body>
 </html>
+       

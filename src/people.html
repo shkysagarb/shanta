@@ -53,7 +53,7 @@
             
                 <div class="row">
                 <div class="col-12">
-                    <div class='pics_in_a_row popup-image'>
+                    <div class='pics_in_a_row zoom-gallery'>
                         <div class='photo'>
                             <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" title="The Uninvited Guest"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg" alt=""/></a>
                         </div>
@@ -62,7 +62,8 @@
                         </div>
                         <div class='photo'>
                             <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="Swan Lake"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg" alt=""/></a>
-                        </div>   <div class='photo'>
+                        </div>   
+                        <div class='photo'>
                             <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner">
                                 <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg" alt=""/>
                              </a>
@@ -80,7 +81,8 @@
                         </div>
                         <div class='photo'>
                             <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="Swan Lake"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg" alt=""/></a>
-                        </div>   <div class='photo'>
+                        </div>  
+                        <div class='photo'>
                             <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner">
                                 <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg" alt=""/>
                              </a>
@@ -93,7 +95,6 @@
             </div>
         </section>
         <!-- images gallery ends-->
-        
        <!--  footer div starts-->
 <footer>
     <div class="container">
@@ -148,7 +149,30 @@
                 $('.navbar').removeClass('sticky-nav');
             }
         });
+        $('.zoom-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+                verticalFit: true,
+//                titleSrc: function(item) {
+//                    return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+//                }
+            },
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // don't foget to change the duration also in CSS
+                opener: function(element) {
+                    return element.find('img');
+                }
+            }
 
+        });
         $('.test-popup-link').magnificPopup({
             type: 'image'
             // other options
@@ -162,6 +186,9 @@
 
             fixedContentPos: false
         });
+        $('.simple-ajax-popup').magnificPopup({
+                    type: 'ajax'
+         });
         $('.images-slider-div').owlCarousel({
             loop: true,
             margin: 30,
@@ -225,6 +252,6 @@
     });
 </script>
 
-    </body>
+</body>
 </html>
         
