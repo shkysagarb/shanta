@@ -4,7 +4,7 @@ var sass        = require('gulp-sass');
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', ,'node_modules/magnific-popup/dist/magnific-popup.css','node_modules/owl.carousel/dist/assets/owl.carousel.min.css','src/scss/*.scss'])
+    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', ,'node_modules/magnific-popup/dist/magnific-popup.css','node_modules/owl.carousel/dist/assets/owl.carousel.min.css','node_modules/hover.css/css/hover-min.css','src/scss/*.scss'])
         .pipe(sass())
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());

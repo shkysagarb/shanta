@@ -2,6 +2,7 @@
 @import "magnific-popup.css";
 @import "icofont.min.css";
 @import "owl.carousel.min.css";
+@import "hover-min.css";
 // Bootstrap Sass Imports
 @import "node_modules/bootstrap/scss/bootstrap";
 
@@ -56,9 +57,58 @@ ul {
   margin-bottom: 30px;
 }
 
-.link-part {
+.discover-more-link{
   font-size: 16px;
   letter-spacing: 3px;
+
+    &:hover{
+        color: $heading-bottom-line-color;
+        display: inline-block;
+        transform: translateY(-10px);
+        animation: bounce 2.5s infinite; 
+        -webkit-animation: bounce 2.5s infinite; 
+        -moz-animation: bounce 2.5s infinite; 
+        -o-animation: bounce 2.5s infinite; 
+        
+        //CSS3 Bounce Animation
+        @-webkit-keyframes bounce {
+            0%,  
+            100% {
+               -webkit-transform: translateY(0);
+            } 
+            50% {
+                -webkit-transform: translateY(-10px);
+            }
+        }
+        @-moz-keyframes bounce {
+            0%, 
+            100% {
+               -moz-transform: translateY(0);
+            }
+            50% {
+               -moz-transform: translateY(-10px);
+            }
+        }
+        @-o-keyframes bounce {
+            0%,
+            100% {
+               -o-transform: translateY(0);
+            }
+            50% {
+               -o-transform: translateY(-10px);
+            }
+        }
+        @keyframes bounce {
+            0%,  
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    }
+   
 }
 
 .i-part {
@@ -118,12 +168,11 @@ ul {
     .still-block-hidden {
       display: block;
     }
-
     &:before {
-      background: -moz-linear-gradient(top, rgba(255,255,255,1) -1%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 57%, rgba(255, 255, 255, 1) 58%, rgba(255, 255, 255, 1) 100%);
-      background: -webkit-linear-gradient(top, rgba(255,255,255,1) -1%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 57%, rgba(255, 255, 255, 1) 58%, rgba(255, 255, 255, 1) 100%);
-      background: linear-gradient(to bottom, rgba(255,255,255,1) -1%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 57%, rgba(255, 255, 255, 1) 58%, rgba(255, 255, 255, 1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+           background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 82%, rgba(255,255,255,1) 84%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 86%, rgba(255,255,255,1) 87%, rgba(255,255,255,1) 88%);
+          background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 82%,rgba(255,255,255,1) 84%,rgba(255,255,255,1) 85%,rgba(255,255,255,1) 86%,rgba(255,255,255,1) 87%,rgba(255,255,255,1) 88%);
+          background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 82%,rgba(255,255,255,1) 84%,rgba(255,255,255,1) 85%,rgba(255,255,255,1) 86%,rgba(255,255,255,1) 87%,rgba(255,255,255,1) 88%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
     }
   }
 
@@ -154,9 +203,14 @@ ul {
     height: 100%;
     object-fit: cover;
   }
-
-  &:hover {
-    .play-btn {
+  .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $play-btn-color;
+      
+    &:hover {
       &:after {
         width: 70px;
         height: 70px;
@@ -169,15 +223,6 @@ ul {
         border: dashed 2px $play-btn-color;
       }
     }
-  }
-
-  .play-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $play-btn-color;
-
     &:before,
     &:after {
       content: "";
@@ -226,6 +271,53 @@ ul {
   @include media-breakpoint-down(sm) {
     padding: 20px 50px;
   }
+    &:hover{
+        background-color: $background-color;
+        display: inline-block;
+        transform: translateY(-10px);
+        animation: bounce 2.5s infinite; 
+        -webkit-animation: bounce 2.5s infinite; 
+        -moz-animation: bounce 2.5s infinite; 
+        -o-animation: bounce 2.5s infinite; 
+        
+        //CSS3 Bounce Animation
+        @-webkit-keyframes bounce {
+            0%,  
+            100% {
+               -webkit-transform: translateY(0);
+            } 
+            50% {
+                -webkit-transform: translateY(-10px);
+            }
+        }
+        @-moz-keyframes bounce {
+            0%, 
+            100% {
+               -moz-transform: translateY(0);
+            }
+            50% {
+               -moz-transform: translateY(-10px);
+            }
+        }
+        @-o-keyframes bounce {
+            0%,
+            100% {
+               -o-transform: translateY(0);
+            }
+            50% {
+               -o-transform: translateY(-10px);
+            }
+        }
+        @keyframes bounce {
+            0%,  
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    }
 }
 
 a {
@@ -240,8 +332,9 @@ a {
 
 header {
   .navbar {
-    background-color: rgba(255, 255, 255, 0.8);
-
+      &:hover{
+           background-color: rgba(255, 255, 255, 0.8);
+      }
     &.sticky-nav {
       @include media-breakpoint-up(sm) {
         background-color: #fff;
@@ -545,6 +638,41 @@ footer {
         padding-right: 10px;
         font-size: 14px;
         display: inline-block;
+          &:hover{
+              .icofont-feed{
+                  color:#DC622C;
+              }   
+              .icofont-twitter{
+                  color:#00B6F1;
+              }   
+              .icofont-facebook{
+                  color:#3B5998;
+              }   
+              .icofont-google{
+                  color:#C20806;
+              }   
+              .icofont-instagram{
+                  color:#e4405f;
+              }   
+              .icofont-wordpress{  
+                color:#04769C;
+              }   
+              .icofont-brand-youtube{
+                  color:#C31A1E;
+              }   
+              .icofont-pinterest{
+                  color:#C91517;
+              }   
+              .icofont-github{
+                  color:#040204;
+              }   
+              .icofont-dribbble{
+                  color:#333333;
+              }   
+              .icofont-linkedin{
+                  color:#04669A;
+              }   
+          }
       }
     }
 
@@ -600,32 +728,10 @@ footer {
     padding-top: 90px;
     margin-bottom: $section-margin;
   }
-  padding-top: 35px;
-
-  .pagination {
-    margin-top: 30px;
-    padding-left: 10px;
-
-    li {
-      .page-link {
-        color: #000;
-        padding: 1rem 2rem;
-        @include media-breakpoint-down(sm) {
-          padding: 1rem 1rem;
-        }
-      }
-
+    .media-block{
+        padding-top: 35px;
     }
 
-    .active {
-      .page-link {
-        background-color: $background-color;
-        border-color: #cccccc;
-      }
-
-    }
-
-  }
 }
 
 //media-detail page
