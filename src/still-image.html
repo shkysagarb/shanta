@@ -9,14 +9,15 @@
     <link rel="icon" href="images/shanta_logo.png" sizes="16x16" type="image/png">
 </head>
 
-<body>  
-<!--  header div starts-->
- <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
+<body>
+<!--  headesr div starts-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="index.html">
-         <img src="images/shanta_logo.png" alt="" height="50px" />
+            <img src="images/shanta_logo.png" alt="" height="50px"/>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -37,10 +38,9 @@
                     <a class="nav-link" href="contact.html">CONTACT</a>
                 </li>
             </ul>
-          </div>
-        </nav>
+        </div>
+    </nav>
 </header>
-<!--  header div ends-->
 
  <!--  still-image div starts-->
 <section class="section-still">
@@ -58,7 +58,6 @@
                       <div class="still-outer-block">
                         <h3 class="still-block-heading">People</h3>
                         <div class="still-block-hidden">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                             <a href="gallery.html" class="discover-more-link">DISCOVER MORE  <i class="icofont-play-alt-2"></i></a>
                         </div>
                       </div>
@@ -70,7 +69,6 @@
                       <div class="still-outer-block">
                         <h3 class="still-block-heading">People</h3>
                         <div class="still-block-hidden">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                             <a href="gallery.html" class="discover-more-link">DISCOVER MORE  <i class="icofont-play-alt-2"></i></a>
                         </div>
                       </div>
@@ -82,7 +80,6 @@
                       <div class="still-outer-block">
                         <h3 class="still-block-heading">People</h3>
                         <div class="still-block-hidden">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                             <a href="gallery.html" class="discover-more-link">DISCOVER MORE  <i class="icofont-play-alt-2"></i></a>
                         </div>
                       </div>
@@ -94,7 +91,6 @@
                       <div class="still-outer-block">
                         <h3 class="still-block-heading">People</h3>
                         <div class="still-block-hidden">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                             <a href="gallery.html" class="discover-more-link">DISCOVER MORE  <i class="icofont-play-alt-2"></i></a>
                         </div>
                       </div>
@@ -106,7 +102,6 @@
                       <div class="still-outer-block">
                         <h3 class="still-block-heading">People</h3>
                         <div class="still-block-hidden">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                             <a href="gallery.html" class="discover-more-link">DISCOVER MORE  <i class="icofont-play-alt-2"></i></a>
                         </div>
                       </div>
@@ -118,7 +113,6 @@
                       <div class="still-outer-block">
                         <h3 class="still-block-heading">People</h3>
                         <div class="still-block-hidden">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                             <a href="gallery.html" class="discover-more-link">DISCOVER MORE  <i class="icofont-play-alt-2"></i></a>
                         </div>
                       </div>
@@ -176,15 +170,15 @@
 
 <script>
     $(document).ready(function () {
-        var mainbottom = $('.navbar').offset().top;
+        var mainbottom = $('header').offset().top;
         // on scroll,
         $(window).on('scroll', function () {
             // we round here to reduce a little workload
             stop = Math.round($(window).scrollTop());
             if (stop > mainbottom) {
-                $('.navbar').addClass('sticky-nav');
+                $('header').addClass('sticky-nav');
             } else {
-                $('.navbar').removeClass('sticky-nav');
+                $('header').removeClass('sticky-nav');
             }
         });
         $('.zoom-gallery').magnificPopup({
@@ -290,6 +284,6 @@
     });
 </script>
 
-    </body>
+</body>
 </html>
        

@@ -10,9 +10,9 @@
 </head>
 
 <body>
-<!--  header div starts-->
+<!--  headesr div starts-->
 <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="index.html">
             <img src="images/shanta_logo.png" alt="" height="50px"/>
         </a>
@@ -41,7 +41,6 @@
         </div>
     </nav>
 </header>
-<!--  header div ends-->
 
 <!--media-detail page section starts   -->
 <section class="media-detail">
@@ -124,15 +123,15 @@
 
 <script>
     $(document).ready(function () {
-        var mainbottom = $('.navbar').offset().top;
+       var mainbottom = $('header').offset().top;
         // on scroll,
         $(window).on('scroll', function () {
             // we round here to reduce a little workload
             stop = Math.round($(window).scrollTop());
             if (stop > mainbottom) {
-                $('.navbar').addClass('sticky-nav');
+                $('header').addClass('sticky-nav');
             } else {
-                $('.navbar').removeClass('sticky-nav');
+                $('header').removeClass('sticky-nav');
             }
         });
         $('.zoom-gallery').magnificPopup({
