@@ -936,9 +936,10 @@ footer {
       }
     }
   }
-  .mfp-close{
-		@include media-breakpoint-down(sm) {
-			display: none;
-		} 
-	}
+//  .mfp-close{
+//		@include media-breakpoint-down(sm) {
+//			display: none;
+//		} 
+//	}
+	
 }

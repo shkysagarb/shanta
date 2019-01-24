@@ -6965,6 +6965,3 @@ footer {
         @media (min-width: 768px) {
           .team-inner .ajax-text-and-image .social-icons li, .gallery-inner .ajax-text-and-image .social-icons li {
             font-size: 24px; } }
-  @media (max-width: 767.98px) {
-    .team-inner .mfp-close, .gallery-inner .mfp-close {
-      display: none; } }
