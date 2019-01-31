@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
+//@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 @import "magnific-popup.css";
 @import "icofont.min.css";
 @import "owl.carousel.min.css";
@@ -12,6 +13,8 @@
 
 $font-family-poppins: 'Poppins', sans-serif;
 $font-family-playfair: 'Playfair';
+$font-family: 'Lato', sans-serif;
+
 $background-color: #e5e5e5;
 $heading-bottom-line-color: #b89d4f;
 $play-btn-color: #fff;
@@ -39,19 +42,19 @@ ul {
 .tag-head {
   color: rgba(0, 0, 0, 0.8);
   font-size: $font-size-14;
-  font-family: $font-family-poppins;
+  font-family: $font-family;
   letter-spacing: 3px;
 }
 
 .main-head {
   font-size: 40px;
-  font-family: $font-family-playfair;
+  font-family: $font-family;
   margin-bottom: 15px;
 }
 
 .para {
   font-size: $font-size-14;
-  font-family: $font-family-poppins;
+  font-family: $font-family;
   font-weight: 300;
   margin-bottom: 30px;
 }
@@ -141,7 +144,7 @@ ul {
 
     .still-block-heading {
       font-size: 36px;
-      font-family: $font-family-playfair;
+      font-family: $font-family;
       font-weight: 600;
       letter-spacing: 2px;
       margin-bottom: 40px;
@@ -150,7 +153,7 @@ ul {
     .still-block-hidden {
       display: none;
       font-size: 16px;
-      font-family: $font-family-poppins;
+      font-family: $font-family;
       letter-spacing: 2px;
 
       p {
@@ -167,13 +170,6 @@ ul {
     .still-block-hidden {
       display: block;
     }
-
-    //    &:before {
-    //           background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 82%, rgba(255,255,255,1) 84%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 86%, rgba(255,255,255,1) 87%, rgba(255,255,255,1) 88%);
-    //          background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 82%,rgba(255,255,255,1) 84%,rgba(255,255,255,1) 85%,rgba(255,255,255,1) 86%,rgba(255,255,255,1) 87%,rgba(255,255,255,1) 88%);
-    //          background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 82%,rgba(255,255,255,1) 84%,rgba(255,255,255,1) 85%,rgba(255,255,255,1) 86%,rgba(255,255,255,1) 87%,rgba(255,255,255,1) 88%);
-    //          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
-    //    }
   }
 
   &:before {
@@ -267,7 +263,7 @@ ul {
   border-radius: 5px;
   font-size: 18px;
   letter-spacing: 3px;
-  font-family: $font-family-poppins;
+  font-family: $font-family;
   font-weight: 300;
   @include media-breakpoint-down(sm) {
     padding: 20px 50px;
@@ -323,7 +319,7 @@ ul {
 }
 
 a {
-  font-family: $font-family-poppins;
+  font-family: $font-family;
   color: #000;
 
   &:hover {
@@ -352,7 +348,7 @@ header {
   }
   font-size: 36px;
   margin-bottom: 35px;
-  font-family: $font-family-playfair;
+  font-family: $font-family;
   text-align: center;
   position: relative;
 
@@ -551,14 +547,14 @@ header {
     @include media-breakpoint-up(md) {
       font-size: $heading-font-size;
     }
-    font-family: $font-family-playfair;
+    font-family: $font-family;
     text-align: center;
   }
 
   .check {
     text-align: center;
     font-size: 18px;
-    font-family: $font-family-poppins;
+    font-family: $font-family;
   }
 }
 
@@ -606,7 +602,7 @@ footer {
 
     li {
       font-size: 16px;
-      font-family: $font-family-poppins;
+      font-family: $font-family;
     }
   }
 
