@@ -11,17 +11,18 @@
   background: transparent;
 }
 
-$font-family-poppins: 'Poppins', sans-serif;
-$font-family-playfair: 'Playfair';
+//$font-family-poppins: 'Poppins', sans-serif;
+//$font-family-playfair: 'Playfair';
 $font-family: 'Lato', sans-serif;
 
 $background-color: #e5e5e5;
 $heading-bottom-line-color: #b89d4f;
 $play-btn-color: #fff;
-$heading-font-size: 50px;
-$section-margin-bottom: 80px;
+$heading-font-size: 38px;
+//$section-margin-bottom: 50px;
 $font-size-14: 14px;
-$section-margin: 80px;
+$section-margin: 50px;
+$section-padding: 50px;
 
 ul {
   @include media-breakpoint-down(sm) {
@@ -188,7 +189,7 @@ ul {
 
 .media-box, .full-media-box {
   width: 100%;
-  height: 300px;
+  height: 365px;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
@@ -345,9 +346,11 @@ header {
   @include media-breakpoint-up(md) {
     font-size: $heading-font-size;
     margin-bottom: $section-margin;
+	margin-top: $section-margin;
   }
   font-size: 36px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   font-family: $font-family;
   text-align: center;
   position: relative;
@@ -367,9 +370,6 @@ header {
 }
 
 .front-hero {
-  //  background-size: cover;
-  //  position: relative;
-
   .carousel-inner,
   .carousel-item {
     @include media-breakpoint-up(md) {
@@ -387,17 +387,13 @@ header {
 }
 
 .section-media {
-  margin-bottom: 50px;
-  padding-bottom: 30px;
-  padding-top: 50px;
+  margin-bottom: $section-margin;
+	margin-top: 30px;
   @include media-breakpoint-up(md) {
-    padding-top: 90px;
     margin-bottom: $section-margin;
   }
-
   .media-list-item {
-    padding-bottom: 50px;
-
+    padding-bottom: $section-padding;
     .full-media-box {
       margin-bottom: 30px;
     }
@@ -436,10 +432,9 @@ header {
 }
 
 .section-owl {
-  margin-bottom: $section-margin-bottom;
-
+  margin-bottom: $section-margin;
   .images-slider-diva, .images-slider-div {
-    margin-bottom: 50px;
+    margin-bottom: $section-margin;
     @include media-breakpoint-down(sm) {
       padding: 20px;
     }
@@ -451,8 +446,7 @@ header {
 }
 
 .section-people-views {
-  //	background-color: $background-color;
-  padding: 20px 0 20px 0;
+  padding: 50px 0 20px 0;
 
   #quote-carousel {
     margin-top: 30px;
@@ -736,10 +730,10 @@ footer {
 
 //media-detail page
 .media-detail {
-  padding-top: $section-margin;
-  margin-bottom: 50px;
+  padding-top: $section-padding;
+  margin-bottom: $section-margin;
   @include media-breakpoint-up(md) {
-    padding-top: 90px;
+    padding-top: $section-padding;
     margin-bottom: $section-margin;
   }
 
@@ -810,43 +804,6 @@ footer {
       }
     }
   }
-
-  //  .blab {
-  //    display: flex;
-  //    flex-wrap: wrap;
-  //
-  //    div {
-  //      flex-grow: 1;
-  //      margin: 2px;
-  //      background-color: violet;
-  //      height: 200px;
-  //
-  //      img {
-  //        height: 200px;
-  //        object-fit: cover;
-  //        max-width: 100%;
-  //        min-width: 100%;
-  //        vertical-align: bottom;
-  //      }
-  //    }
-  //
-  //
-  //  }
-  //
-  //  .photo {
-  //    width: 100%;
-  //    height: 300px;
-  //
-  //    img {
-  //      width: 100%;
-  //      height: 100%;
-  //      object-fit: cover;
-  //    }
-  //  }
-  //
-  //  .pics_in_a_row > div:not(:last-child) {
-  //    margin-right: 2%;
-  //  }
 }
 
 //contact page
@@ -866,7 +823,7 @@ footer {
 
 .contact-page {
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: $section-margin;
 }
 
 //about us page
@@ -878,7 +835,7 @@ footer {
 //our-team page
 .our-team {
   margin-top: $section-margin;
-  margin-bottom: 50px;
+  margin-bottom: $section-margin;
 }
 
 //team0inner page
